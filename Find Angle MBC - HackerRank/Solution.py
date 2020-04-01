@@ -2,7 +2,6 @@
 Length_AB = int(input())
 Length_BC = int(input())
 
-
 from math import sqrt, pow, acos, pi, degrees
 
 Length_AC = sqrt(pow(Length_AB, 2) + pow(Length_BC, 2))
