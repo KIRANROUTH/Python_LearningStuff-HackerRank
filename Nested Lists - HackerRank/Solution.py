@@ -1,19 +1,7 @@
 #Question Link: https://www.hackerrank.com/challenges/nested-list/problem
 
-#My some test case are right but shown wrong.
-"""
-their output must be in
-harry
-berry
+students = []
 
-but mine
-berry
-harry
-
-both are same but shown as wrong in two test cases.
-"""
-
-students = [] 
 if __name__ == '__main__':
     for _ in range(int(input())):
         name = input()
@@ -32,6 +20,15 @@ grade = list(grade)
 grade.sort()
 needed_grade = grade[1]
 
+i = 0
+
+name = []
 for name_, grade in dicti.items():
+    
     if grade == needed_grade:
-        print(name_)
+        name.append(name_)
+
+name.sort()
+
+for name in name:
+    print(name)
